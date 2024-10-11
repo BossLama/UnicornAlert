@@ -22,7 +22,25 @@ unicornManager.createAlert(UnicornAlertTypes.INFO, 'This is an information!');
 unicornManager.createAlert(UnicornAlertTypes.INFO, 'This is an information!', 5000, () => {
   alert("Clicked");
 });
+```
 
+## How to customize colorsheme?
+The UnicornAlert.js file contains a constant at the beginning of the code that contains all the colours. Adjust these colours to use your own theme.
+```javascript
+const UnicornAlertColors = {
+    BORDER_SUCCESS: '#3fab3e',
+    BORDER_ERROR: '#e74c3c',
+    BORDER_WARNING: '#f39c12',
+    BORDER_INFO: '#3498db',
 
+    BACKGROUND_SUCCESS: '#70ff6e',
+    BACKGROUND_ERROR: '#ffa1a1',
+    BACKGROUND_WARNING: '#fff1a1',
+    BACKGROUND_INFO: '#a1e3ff',
 
+    TEXT_SUCCESS: '#2e5e2d',
+    TEXT_ERROR: '#5e2d2d',
+    TEXT_WARNING: '#6b4912',
+    TEXT_INFO: '#123f6b'
+};
 ```
